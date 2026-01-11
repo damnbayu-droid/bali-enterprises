@@ -1,4 +1,11 @@
-import { Eye, Globe, Shield, Users, TrendingUp, Handshake } from 'lucide-react'
+import type { Metadata } from "next";
+import { Eye, Globe, Shield, Users, TrendingUp, Handshake } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "About Us | Bali Enterprises",
+  description:
+    "Learn about Bali Enterprises, an international holding company connecting global partners with strategic opportunities in Indonesia and ASEAN.",
+};
 
 export default function AboutPage() {
   return (
