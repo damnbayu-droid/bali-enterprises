@@ -39,6 +39,7 @@ export default function EcosystemPage() {
     {
       category: "Local Operating Companies",
       companies: [
+        { name: "PT Indonesian Visas Agency", description: "Comprehensive immigration and legal services for expatriates, tourists, and foreign investors in Indonesia." },
         { name: "PT Inaranet Group Sejahtra", description: "Media and digital support services for businesses and content creators." },
         { name: "PT Nawa Cita Bersama", description: "Bali Help Group operations, coordinating integrated services for expatriates and tourists." },
         { name: "PT Bali Surga Indah", description: "Tourism services connecting visitors with authentic Balinese experiences." },

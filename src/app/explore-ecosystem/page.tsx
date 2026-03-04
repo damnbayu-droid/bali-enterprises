@@ -66,6 +66,7 @@ export default function ExploreEcosystemPage() {
     {
       category: "Local Operating Companies",
       companies: [
+        "PT Indonesian Visas Agency - Comprehensive immigration and legal services",
         "PT Inaranet Group Sejahtra - Media & digital support",
         "PT Nawa Cita Bersama - Bali Help Group operations",
         "PT Bali Surga Indah - Tourism services",
