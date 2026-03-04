@@ -120,3 +120,53 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Print Optimization for Strategic Blueprint PDF */
+@media print {
+  /* Hide unnecessary UI elements */
+  nav, footer, .print-hidden, button {
+    display: none !important;
+  }
+
+  /* Reset layout for strict A4/Letter sizing */
+  body, html {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 11pt;
+  }
+
+  /* Force clean page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  
+  img, table, figure, .chart-placeholder, .insight-box, .risk-box {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Remove link URLs from showing up as content on print in some browsers */
+  a[href]:after {
+    content: none !important;
+  }
+
+  /* Override dark mode if active during print */
+  * {
+    color: black !important;
+    background-color: transparent !important;
+    border-color: #e5e7eb !important; /* light gray for borders */
+  }
+
+  /* Re-enable slight shading for specific components */
+  .bg-primary\/5, .bg-muted\/30 {
+    background-color: #f9fafb !important; /* extremely light gray */
+  }
+
+  /* Ensure text remains legible */
+  .text-muted-foreground {
+    color: #4b5563 !important;
+  }
+}

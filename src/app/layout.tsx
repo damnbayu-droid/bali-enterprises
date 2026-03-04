@@ -1,34 +1,40 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bali.enterprises"),
   title: "Bali Enterprises | Global Holding & Investment Gateway to Indonesia",
-  description: "Bali Enterprises: Your trusted gateway for international investment and strategic partnerships in Indonesia. Global holding company enabling cross-border business development with proven operational infrastructure.",
-  keywords: ["Bali Enterprises", "Indonesia investment", "international business", "PT PMA", "business formation Indonesia", "ASEAN partnerships", "Indonesian market entry", "holding company"],
-  authors: [{ name: "Bali Enterprises" }],
+  description:
+    "Bali Enterprises: Your trusted gateway for international investment and strategic partnerships in Indonesia.",
+  keywords: [
+    "Bali Enterprises",
+    "Indonesia investment",
+    "international business",
+    "PT PMA",
+    "ASEAN partnerships",
+  ],
   icons: {
-    icon: "https://iili.io/fYu9NHB.png",
+    icon: "/image/logo.webp",
   },
   openGraph: {
     title: "Bali Enterprises | Global Holding & Investment Gateway",
-    description: "Your trusted gateway for international investment and strategic partnerships in Indonesia",
+    description:
+      "Your trusted gateway for international investment and strategic partnerships in Indonesia",
     url: "https://bali.enterprises",
     siteName: "Bali Enterprises",
     type: "website",
     images: [
       {
-        url: "https://iili.io/fYu9NHB.png",
+        url: "/image/og-image.webp",
         width: 1200,
         height: 630,
+        alt: "Bali Enterprises",
       },
     ],
   },
@@ -36,21 +42,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        suppressHydrationWarning
-        className={`${inter.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col`}
-      >
+    <html lang="en">
+      <body className={inter.className}>
         <Navigation />
-        <main className="flex-1">
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
-        <Toaster />
       </body>
     </html>
   );

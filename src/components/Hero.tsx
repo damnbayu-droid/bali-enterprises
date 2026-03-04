@@ -18,8 +18,10 @@ export default function Hero() {
                     alt="Bali Enterprises Hero"
                     fill
                     priority
-                    className="object-cover object-center transition-transform duration-1000 scale-105"
-                    quality={100}
+                    fetchPriority="high"
+                    sizes="100vw"
+                    className="object-cover object-center"
+                    quality={80}
                 />
             </div>
 
@@ -46,6 +48,7 @@ export default function Hero() {
                         onValueChange={setOpacity}
                         max={100}
                         step={1}
+                        aria-label="Adjust Overlay Opacity"
                         className="w-full"
                     />
                 </div>
@@ -60,6 +63,7 @@ export default function Hero() {
                         onValueChange={setOpacity}
                         max={100}
                         step={1}
+                        aria-label="Adjust Overlay Opacity"
                         orientation="vertical"
                         className="h-full"
                     />

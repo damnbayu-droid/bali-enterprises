@@ -6,7 +6,8 @@ const Footer = () => {
     { name: 'indonesianvisas.com', url: 'https://indonesianvisas.com' },
     { name: 'indodesign.website', url: 'https://indodesign.website' },
     { name: 'mybisnis.app', url: 'https://mybisnis.app' },
-    { name: 'balihair.salon', url: 'https://balihair.salon' },
+    { name: 'tropictech.online', url: 'https://tropictech.online' },
+    { name: 'wellnessbali.id', url: 'https://wellnessbali.id' },
   ]
 
   return (

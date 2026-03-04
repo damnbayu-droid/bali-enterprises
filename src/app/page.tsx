@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import Hero from '@/components/Hero'
 
@@ -62,11 +63,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 relative h-[300px] w-full rounded-2xl overflow-hidden shadow-2xl">
-                {/* Placeholder for investment image - using a abstract professional look */}
-                <div className="absolute inset-0 bg-linear-to-br from-blue-900 to-indigo-800 flex items-center justify-center p-8 text-white text-center">
-                  <span className="text-2xl font-semibold opacity-50">Strategic G20 Member</span>
-                </div>
+              <div className="flex-1 relative h-[300px] w-full rounded-2xl overflow-hidden shadow-2xl border border-border">
+                <Image
+                  src="/image/g20-map.png"
+                  alt="Indonesia Strategic Investment Hub"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

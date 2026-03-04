@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
@@ -9,6 +10,7 @@ const Navigation = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
+    { name: 'Strategic Blueprint', href: '/strategic-entry-blueprint-bali' },
     { name: 'About Us', href: '/about' },
     { name: 'What We Do', href: '/services' },
     { name: 'Our Ecosystem', href: '/ecosystem' },
@@ -22,12 +24,13 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <img
-              src="https://iili.io/fYu9NHB.png"
+            <Image
+              src="/image/logobalienterprises.webp"
               alt="Bali Enterprises Logo"
               width={40}
               height={40}
               className="h-10 w-auto"
+              priority
             />
             <span className="text-xl font-bold tracking-tight">
               BALI ENTERPRISES
