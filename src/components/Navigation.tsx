@@ -25,7 +25,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/image/logobalienterprises.webp"
+              src="/image/Logobalienterprises.webp"
               alt="Bali Enterprises Logo"
               width={40}
               height={40}

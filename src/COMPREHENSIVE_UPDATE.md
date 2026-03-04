@@ -60,7 +60,9 @@ The website natively supports creating a beautifully formatted A4 PDF Whitepaper
 - **Sitemap & Robots**: `src/app/sitemap.ts` and `src/app/robots.ts` dynamically generate the XML and TXT files required by Google limits, ensuring all hidden advisory reports are rapidly indexed.
 - **LCP Optimization**: The main logo (`Navigation.tsx`) and the G20 map (`page.tsx`) utilize Next.js `<Image>` tags with `priority`, `fetchPriority="high"`, and explicit `sizes` attributes (`sizes="(max-width: 768px) 100vw, 50vw"`) to eliminate layout shifts and speed up the Largest Contentful Paint.
 - **Accessibility**: Semantic `aria-label`s were injected into interactive components (like the custom Hero sliders) ensuring a 100/100 accessibility score.
-- **Metadata**: Fixed all Next.js `metadataBase` configuration warnings to ensure OpenGraph (Twitter/Facebook/LinkedIn) link previews function correctly.
+- **Metadata Configuration**: Fixed all Next.js `metadataBase` configuration warnings to ensure OpenGraph (Twitter/Facebook/LinkedIn) link previews function correctly.
+- **Static SEO Routing**: Replaced dynamic Next.js `robots.ts` with a hardcoded `public/robots.txt` file to explicitly bypass rogue header injections (`Content-Signal`), guaranteeing flawless crawler indexing and eliminating Lighthouse validation errors.
+- **UI & Path Sanity**: Hardened asset paths against case-sensitive Linux environments (Vercel) to ensure static assets, like the primary logo, render flawlessly in production.
 
 ---
 
