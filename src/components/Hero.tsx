@@ -40,7 +40,7 @@ export default function Hero() {
             {/* Slider Controls */}
 
             {/* Mobile: Bottom Center (Horizontal) */}
-            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-64 z-40 md:hidden flex flex-col items-center gap-2">
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 z-40 md:hidden flex flex-col items-center gap-2">
                 <div className="bg-white/20 backdrop-blur-md p-2 rounded-full border border-white/30 shadow-lg w-full">
                     <Slider
                         defaultValue={[100]}
