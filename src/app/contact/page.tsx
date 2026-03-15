@@ -222,7 +222,7 @@ export default function ContactPage() {
               <div className="mb-6">
                 <h3 className="text-xl font-bold mb-2">Bayu Damopolii - Manoppo</h3>
                 <p className="text-muted-foreground mb-1">Chief Executive Officer (CEO)</p>
-                <p className="font-semibold text-foreground">Bali Enterprises</p>
+                <p className="font-semibold text-foreground">ceo@bali.enterprises</p>
               </div>
 
               <div className="border-t border-border pt-6 space-y-4">

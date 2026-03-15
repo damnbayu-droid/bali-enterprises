@@ -4,12 +4,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://bali.enterprises';
 
     // Core Pages
-    const coreRoutes = ['', '/about', '/services', '/ecosystem', '/why-us', '/contact'].map(
+    const coreRoutes = [
+        '',
+        '/about',
+        '/services',
+        '/ecosystem',
+        '/why-us',
+        '/contact',
+        '/starting-business-bali-guide',
+        '/why-invest-in-bali',
+        '/startup-ecosystem-bali',
+        '/bali-vs-thailand-business',
+        '/bali-vs-singapore-startup',
+        '/bali-vs-dubai-business',
+        '/indonesia-vs-malaysia-business',
+        '/why-bali-for-startups',
+        '/business-regions-indonesia',
+        '/doing-business-in-bali',
+        '/bali-business-environment',
+        '/business-opportunities-bali',
+        '/cost-of-doing-business-bali',
+        '/industries-growing-bali',
+        '/how-to-start-a-business-in-bali',
+        '/entrepreneurship-in-bali',
+        '/digital-nomads-startups-bali',
+        '/building-a-business-in-bali',
+        '/mistakes-foreign-entrepreneurs-make',
+        '/foreign-investment-indonesia',
+        '/why-invest-indonesia',
+        '/investment-opportunities-indonesia',
+        '/bali-investment-guide',
+        '/sectors-open-foreign-investors',
+        '/indonesia-business-growth',
+        '/bali-enterprises-ecosystem',
+        '/investor-referral-bali',
+        '/bali-corporate-services',
+        '/bali-investment-consultancy',
+        '/boutique-investment-bali',
+        '/expanding-business-indonesia',
+        '/build-company-in-bali',
+        '/build-company-in-jakarta',
+        '/company-formation-bali',
+        '/company-formation-jakarta',
+        '/company-formation-indonesia',
+    ].map(
         (route) => ({
             url: `${baseUrl}${route}`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
-            priority: route === '' ? 1 : 0.8,
+            priority: route === '' ? 1 : route === '/starting-business-bali-guide' ? 0.95 : 0.8,
         })
     );
 

@@ -7,6 +7,23 @@ import { PrintButton } from "@/components/ui/print-button";
 export const metadata: Metadata = {
     title: "Strategic Entry Blueprint for Foreign Founders in Bali | Bali Enterprises",
     description: "Comprehensive strategic framework for foreign founders planning to establish compliant and scalable business operations in Bali.",
+    alternates: {
+        canonical: "https://bali.enterprises/strategic-entry-blueprint-bali",
+    },
+    openGraph: {
+        title: "Strategic Entry Blueprint for Foreign Founders",
+        description: "The definitive technical roadmap for foreign-owned enterprises in Bali.",
+        url: "https://bali.enterprises/strategic-entry-blueprint-bali",
+        siteName: "Bali Enterprises",
+        type: "website",
+        images: ["/image/og-image.webp"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Bali Strategic Entry Blueprint",
+        description: "A 10-chapter technical framework for Indonesian market entry.",
+        images: ["/image/og-image.webp"],
+    }
 };
 
 const advisoryReports = [
@@ -93,9 +110,15 @@ export default function HubPage() {
                         {/* Note: In a real implementation this would trigger the layout context or a local state.*/}
                         {/* Using standard link to the whatsapp anchor defined in layout for simplicity if state not wired */}
                         <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 min-w-[240px] text-md" asChild>
-                            <a href="https://wa.me/6285727041992?text=I%20would%20like%20to%20discuss%20my%20structural%20plan%20for%20Bali" target="_blank" rel="noopener noreferrer">
+                            <Link href="/contact">
                                 Schedule Strategic Consultation
-                            </a>
+                            </Link>
+                        </Button>
+                        <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5 min-w-[240px] text-md" asChild>
+                            <Link href="/starting-business-bali-guide">
+                                Access Ultimate Guide
+                                <ChevronRight className="ml-2 h-4 w-4" />
+                            </Link>
                         </Button>
                         <PrintButton />
                     </div>

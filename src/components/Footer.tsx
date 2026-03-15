@@ -21,12 +21,10 @@ const Footer = () => {
 
           {/* Main Domain */}
           <Link
-            href="https://www.bali.enterprises"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-base font-semibold text-foreground hover:text-primary transition-colors"
+            href="/sitemap"
+            className="text-base font-semibold text-foreground hover:text-primary transition-colors uppercase tracking-[0.2em]"
           >
-            www.bali.enterprises
+            Sitemap
           </Link>
 
           {/* Linked Company Domains */}

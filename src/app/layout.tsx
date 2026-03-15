@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "ASEAN partnerships",
   ],
   icons: {
-    icon: "/image/logo.webp",
+    icon: "/image/Logobalienterprises.webp",
   },
   openGraph: {
     title: "Bali Enterprises | Global Holding & Investment Gateway",
@@ -37,6 +37,12 @@ export const metadata: Metadata = {
         alt: "Bali Enterprises",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bali Enterprises | Global Holding & Investment Gateway",
+    description: "Your trusted gateway for international investment and strategic partnerships in Indonesia.",
+    images: ["/image/og-image.webp"],
   },
 };
 

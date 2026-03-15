@@ -59,7 +59,7 @@ const zones: ZoneData[] = [
     },
 ];
 
-export function ZoningMatrix() {
+export function ZoningMatrix({ isPrint = false }: { isPrint?: boolean }) {
     const [activeZone, setActiveZone] = useState<ZoneData | null>(zones[0]);
 
     const StatusIcon = ({ status }: { status: boolean }) => {
@@ -69,6 +69,38 @@ export function ZoningMatrix() {
             <XCircle className="w-5 h-5 text-rose-500" />
         );
     };
+
+    if (isPrint) {
+        return (
+            <div className="space-y-12">
+                {zones.map((zone) => (
+                    <div key={zone.id} className="border rounded-xl p-8 bg-white break-inside-avoid">
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className={`w-4 h-4 rounded-full ${zone.color}`} />
+                            <h4 className="text-2xl font-serif text-foreground">{zone.name}</h4>
+                        </div>
+                        <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                            {zone.description}
+                        </p>
+                        <div className="grid grid-cols-3 gap-4 border-t border-border pt-8">
+                            <div className="flex flex-col items-center justify-center p-4 bg-slate-50 rounded-lg border border-slate-100">
+                                <span className="text-sm text-muted-foreground font-medium mb-3">Tourism</span>
+                                <StatusIcon status={zone.tourismAllowed} />
+                            </div>
+                            <div className="flex flex-col items-center justify-center p-4 bg-slate-50 rounded-lg border border-slate-100">
+                                <span className="text-sm text-muted-foreground font-medium mb-3">Retail / Office</span>
+                                <StatusIcon status={zone.commercialAllowed} />
+                            </div>
+                            <div className="flex flex-col items-center justify-center p-4 bg-slate-50 rounded-lg border border-slate-100">
+                                <span className="text-sm text-muted-foreground font-medium mb-3">Residential</span>
+                                <StatusIcon status={zone.residentialAllowed} />
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        );
+    }
 
     return (
         <div className="w-full bg-white border border-border rounded-xl shadow-sm overflow-hidden my-8">
