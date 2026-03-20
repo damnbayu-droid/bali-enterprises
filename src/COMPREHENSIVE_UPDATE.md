@@ -7,7 +7,7 @@
 ---
 
 ## 1. Executive Summary
-Bali Enterprises is a corporate advisory and investment gateway platform designed for foreign founders entering the Indonesian market (specifically Bali). It serves as both a lead-generation tool and an authoritative knowledge base, utilizing a high-end, "boutique consulting" design aesthetic modeled after top-tier firms (minimalist, data-driven, precise typography).
+Bali Enterprises is a corporate advisory and investment gateway platform designed for foreign founders entering the Indonesian market. It serves as both a lead-generation tool and an authoritative knowledge base, utilizing a high-end, "boutique consulting" design aesthetic modeled after top-tier firms (minimalist, data-driven, precise typography). The platform has recenty expanded from a Bali-centric focus to a **National Archipelago Gateway** covering 17 major Indonesian economic hubs.
 
 ## 2. Technology Stack
 - **Framework:** Next.js 15.3 (App Router)
@@ -20,69 +20,52 @@ Bali Enterprises is a corporate advisory and investment gateway platform designe
 ---
 
 ## 3. Core Architecture & Routing
-The application utilizes the Next.js `src/app` directory.
+The application utilizes the Next.js `src/app` directory with a focus on high-fidelity, content-rich landing pages.
 
 ### Main Pages
-- `/` (Home): The landing page featuring a dynamic hero slider, the G20 investment map, and core pillars.
+- `/` (Home): The landing page featuring a polished "Opacity Style" hero, the G20 investment map, and a **Regional Hub Navigation** grid linking to 17 city-specific routes.
 - `/about`: Details the ethos and mission of the team.
 - `/services` & `/partner-with-us`: Call-to-action pages aimed at lead generation.
 - `/ecosystem` & `/why-us`: Additional context on the local network.
 
 ### The Strategic Entry Blueprint (Knowledge Hub)
 Located at `/strategic-entry-blueprint-bali`, this is the crown jewel of the website. It contains 10 deeply researched advisory reports detailing foreign investment structures (PT PMA), visa sequencing, zoning laws, and tax compliance.
-- The Hub Page acts as a master directory.
-- Child Routes (e.g. `/strategic-entry-blueprint-bali/investor-kitas-sequencing`) contain the actual consulting content.
+
+### Regional Investment Clusters (17 Cities) [NEW]
+The platform now features a massive regional engine with 17 dedicated city pages (e.g., `/company-formation-jakarta`, `/pt-pma-setup-lombok`, `/pt-pma-setup-manado`).
+- **Elite/High-Fidelity Routes**: Jakarta, Denpasar, Manado, and Lombok have been upgraded to "Elite" status with 18-section exhaustive content, localized case studies, and specialized industry insights (e.g., Mandalika SEZ, Jakarta Fintech).
 
 ---
 
 ## 4. Key Features & Latest Implementations
 
 ### A. Advanced Interactive Visualizations (Bespoke Components)
-Instead of static images, the Strategic Blueprint utilizes 10 fully interactive, consulting-grade data visualization components (located in `src/components/charts/`):
-1. **`ZoningMatrix`**: Interactive zone classification analyzer showing what is legal in Green vs. Pink zones.
-2. **`CapitalPhasingCurve`**: Recharts area graph tracking capital deployment against the 10 Billion IDR requirement.
-3. **`VisaCriticalPath`**: Step-by-step interactive timeline linking incorporation to KITAS.
-4. **`ComplianceLayerCake`**: 3D interactive stack of regulatory jurisdictions (Federal to local Banjar).
-5. **`KbliSynergyMap`**: Interactive network web representing business code relationships.
-6. **`DeploymentGantt`**: Responsive 24-month interactive gantt project timeline.
-7. **`EquityValueChart`**: Recharts dual-axis progression curve comparing deployed capital vs valuation.
-8. **`ComplianceCalendar`**: Tab-based risk-assessment compliance matrix for tax and LKPM reporting.
-9. **`CorporateScaleMatrix`**: Comparative corporate structuring data table testing holding vs nominee structures.
-10. **`ProgressionModelFlow`**: Animated stage-gate logic model showing the transition from passive investor to working director.
+The Strategic Blueprint utilizes 10 fully interactive, consulting-grade data visualization components (located in `src/components/charts/`), also optimized for the "Super Advance PDF" print output.
 
-### B. The Knowledge Hub (Ultimate Guide & Clusters)
-The site features a massive SEO content engine comprising **45+ high-authority guides** organized into 6 thematic clusters:
+### B. Massive Content Cluster Engine
+The site features a massive SEO content engine comprising **60+ high-authority guides** organized into 7 thematic clusters:
 1.  **Business in Bali**: Market context, environment, and opportunities.
-2.  **Entrepreneurship**: Founder journeys, nomad transition, and scaling.
-3.  **Investment Indonesia**: Macro-economics, sector openness, and growth.
-4.  **Corporate Ecosystem**: Bali Enterprises service stack and referral flows.
-5.  **Comparisons**: Jurisdictional arbitrage (Bali vs Singapore, Dubai, Thailand).
-6.  **Company Formation [NEW]**: Specialized formation paths for Bali, Jakarta, and National Indonesia.
+2.  **Entrepreneurship**: Founder journeys and nomad transition.
+3.  **Investment Indonesia**: Macro-economics and growth.
+4.  **Corporate Ecosystem**: Bali Enterprises service stack.
+5.  **Comparisons**: Jurisdictional arbitrage (Bali vs Singapore, Dubai, etc.).
+6.  **National PT PMA Setup (Cluster 6)**: Major hubs (Lombok, Yogyakarta, Bandung, Medan).
+7.  **Regional Growth (Cluster 7)**: Emerging markets (Batam, Makassar, Manado, Labuan Bajo).
 
-### C. Advanced PDF & Registration Flow
-1.  **Ultimate Guide Header**: Features a robust `DownloadGuideButton` with "Preparing PDF..." loading states.
-2.  **Master Print View (`/starting-business-bali-guide/print`)**: A comprehensive internal route that compiles all 14+ sections into a professional report.
-3.  **Hardened Visuals**: Components like the `ZoningMatrix` detect the print state and flatten to show all data, ensuring the "Super Advance PDF" requirement is met.
-4.  **Layout Fixes**: The Step-by-Step Registration section was hardened to prevent content overlap during long-form rendering.
-
-### D. SEO & Social Architecture (Hardened)
-- **Standardized Metadata**: Every page includes maximized metadata, including Article Schema, FAQ JSON-LD, and high-fidelity OpenGraph/Twitter cards.
-- **Canonical Optimization**: Explicit canonical management via `alternates` in metadata ensures `https://bali.enterprises` remains the source of truth across all regional clusters.
-- **Navigation Hub**: A user-facing `/sitemap` page provides a high-authority index of all strategic intelligence, while `sitemap.ts` dynamically handles search engine indexing.
+### C. Deployment Hardening & UX Safeguards [NEW]
+1.  **Security Headers**: Implemented a comprehensive **Content Security Policy (CSP)**, HSTS, and X-Frame-Options in `next.config.ts`.
+2.  **UX Resilience**: Created branded, high-fidelity `src/app/not-found.tsx` and `src/app/error.tsx` pages to ensure professional brand continuity during disruptions.
+3.  **Indexing Integrity**: Switched to a dynamic `src/app/robots.ts` and managed `sitemap.ts` that includes all 17 new growth routes with optimized crawl priorities.
+4.  **Hero UI Refinement**: Removed interactive sliders in favor of an aesthetic, fixed "Opacity style" gradient and high-contrast accessible CTAs for better performance and usability.
 
 ---
 
 ## 5. Maintenance & Future Development
-- **New Cluster Growth**: When adding new clusters, ensure they link back to the central Pillar (`/starting-business-bali-guide`) with anchor text diversity.
+- **City Page Expansion**: When adding a new city, use the 18-section "Elite" template used for Jakarta/Manado to maintain high-fidelity parity.
 - **Regional Targeting**: Continue the "Bali + Jakarta + National" focus in metadata for competitive SEO positioning.
-- **Adding New Charts**: When adding new visualizations, ensure they match the established minimalist tone (slate, primary blue/indigo, muted foregrounds) and support the `isPrint` prop for flattened PDF output.
-- **Writing New Reports**: Any new long-form reports should utilize the `<AdvisoryInsight>` and `<RiskNote>` components (`src/components/ui/`) to break up walls of text.
-- **Performance**: Always run `npm run build` locally after adding heavy graphical dependencies (like `recharts`) to ensure chunk bundles remain optimized and error-free.
-- **LCP Optimization**: The main logo (`Navigation.tsx`) and the G20 map (`page.tsx`) utilize Next.js `<Image>` tags with `priority`, `fetchPriority="high"`, and explicit `sizes` attributes (`sizes="(max-width: 768px) 100vw, 50vw"`) to eliminate layout shifts and speed up the Largest Contentful Paint.
-- **Accessibility**: Semantic `aria-label`s were injected into interactive components (like the custom Hero sliders) ensuring a 100/100 accessibility score.
-- **Metadata Configuration**: Fixed all Next.js `metadataBase` configuration warnings to ensure OpenGraph (Twitter/Facebook/LinkedIn) link previews function correctly.
-- **Static SEO Routing**: Replaced dynamic Next.js `robots.ts` with a hardcoded `public/robots.txt` file to explicitly bypass rogue header injections (`Content-Signal`), guaranteeing flawless crawler indexing and eliminating Lighthouse validation errors.
-- **UI & Path Sanity**: Hardened asset paths against case-sensitive Linux environments (Vercel) to ensure static assets, like the primary logo, render flawlessly in production.
+- **Adding New Charts**: Ensure any new visualizations support the `isPrint` prop for flattened PDF output.
+- **Performance**: The main landing page is optimized for LCP; ensure any added sections below the fold use `loading="lazy"` or dynamic imports if they involve heavy client-side logic.
+- **Static Assets**: Assure all images are in `.webp` format and stored in `/public/image/` with consistent case-sensitivity to prevent build failures on Linux/Vercel.
 
 ---
 

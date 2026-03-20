@@ -31,14 +31,33 @@ const clusters = [
         ]
     },
     {
-        name: "Cluster 6: Company Formation",
+        name: "Cluster 6: National Economic Hubs (PT PMA)",
         icon: <Building2 className="h-5 w-5 text-primary" />,
         links: [
-            { title: "How to Build a Company in Bali", href: "/build-company-in-bali" },
-            { title: "How to Build a Company in Jakarta", href: "/build-company-in-jakarta" },
             { title: "Company Formation Bali", href: "/company-formation-bali" },
             { title: "Company Formation Jakarta", href: "/company-formation-jakarta" },
+            { title: "PT PMA Setup Surabaya", href: "/pt-pma-setup-surabaya" },
+            { title: "PT PMA Setup Lombok", href: "/pt-pma-setup-lombok" },
+            { title: "PT PMA Setup Yogyakarta", href: "/pt-pma-setup-yogyakarta" },
+            { title: "PT PMA Setup Bandung", href: "/pt-pma-setup-bandung" },
+            { title: "PT PMA Setup Medan", href: "/pt-pma-setup-medan" },
             { title: "Company Formation Indonesia", href: "/company-formation-indonesia" },
+        ]
+    },
+    {
+        name: "Cluster 7: Regional Growth Centers (PT PMA)",
+        icon: <Globe className="h-5 w-5 text-primary" />,
+        links: [
+            { title: "Batam (Free Trade Zone)", href: "/pt-pma-setup-batam" },
+            { title: "Makassar (Eastern Gateway)", href: "/pt-pma-setup-makassar" },
+            { title: "Semarang (Central Java)", href: "/pt-pma-setup-semarang" },
+            { title: "Balikpapan (IKN Gateway)", href: "/pt-pma-setup-balikpapan" },
+            { title: "Palembang (Energy Hub)", href: "/pt-pma-setup-palembang" },
+            { title: "Labuan Bajo (Eco-Tourism)", href: "/pt-pma-setup-labuan-bajo" },
+            { title: "Manado (Dive & Trade)", href: "/pt-pma-setup-manado" },
+            { title: "Malang (Agribusiness)", href: "/pt-pma-setup-malang" },
+            { title: "Denpasar (Urban Bali)", href: "/pt-pma-setup-denpasar" },
+            { title: "Tangerang (Industrial Hub)", href: "/pt-pma-setup-tangerang" },
         ]
     },
     {
