@@ -50,14 +50,34 @@ Instead of static images, the Strategic Blueprint utilizes 10 fully interactive,
 9. **`CorporateScaleMatrix`**: Comparative corporate structuring data table testing holding vs nominee structures.
 10. **`ProgressionModelFlow`**: Animated stage-gate logic model showing the transition from passive investor to working director.
 
-### B. Comprehensive PDF Print Engine
-The website natively supports creating a beautifully formatted A4 PDF Whitepaper out of the 10-part Strategic Blueprint. 
-- **Master Route (`/strategic-entry-blueprint-bali/print`)**: A hidden route that dynamically aggregates all 10 advisory components into a single massive document.
-- **`PrintTrigger` Component**: Automatically invokes the `window.print()` dialogue 1 second after the user successfully loads the master print page.
-- **CSS `@media print` Logic**: Strips out dark mode, hides the site navigation, enforces strict `break-before: page` rules to ensure chapters start on fresh pages, and standardizes fonts and link colors for physical printing.
+### B. The Knowledge Hub (Ultimate Guide & Clusters)
+The site features a massive SEO content engine comprising **45+ high-authority guides** organized into 6 thematic clusters:
+1.  **Business in Bali**: Market context, environment, and opportunities.
+2.  **Entrepreneurship**: Founder journeys, nomad transition, and scaling.
+3.  **Investment Indonesia**: Macro-economics, sector openness, and growth.
+4.  **Corporate Ecosystem**: Bali Enterprises service stack and referral flows.
+5.  **Comparisons**: Jurisdictional arbitrage (Bali vs Singapore, Dubai, Thailand).
+6.  **Company Formation [NEW]**: Specialized formation paths for Bali, Jakarta, and National Indonesia.
 
-### C. Performance & SEO Optimizations (100/100 Lighthouse)
-- **Sitemap & Robots**: `src/app/sitemap.ts` and `src/app/robots.ts` dynamically generate the XML and TXT files required by Google limits, ensuring all hidden advisory reports are rapidly indexed.
+### C. Advanced PDF & Registration Flow
+1.  **Ultimate Guide Header**: Features a robust `DownloadGuideButton` with "Preparing PDF..." loading states.
+2.  **Master Print View (`/starting-business-bali-guide/print`)**: A comprehensive internal route that compiles all 14+ sections into a professional report.
+3.  **Hardened Visuals**: Components like the `ZoningMatrix` detect the print state and flatten to show all data, ensuring the "Super Advance PDF" requirement is met.
+4.  **Layout Fixes**: The Step-by-Step Registration section was hardened to prevent content overlap during long-form rendering.
+
+### D. SEO & Social Architecture (Hardened)
+- **Standardized Metadata**: Every page includes maximized metadata, including Article Schema, FAQ JSON-LD, and high-fidelity OpenGraph/Twitter cards.
+- **Canonical Optimization**: Explicit canonical management via `alternates` in metadata ensures `https://bali.enterprises` remains the source of truth across all regional clusters.
+- **Navigation Hub**: A user-facing `/sitemap` page provides a high-authority index of all strategic intelligence, while `sitemap.ts` dynamically handles search engine indexing.
+
+---
+
+## 5. Maintenance & Future Development
+- **New Cluster Growth**: When adding new clusters, ensure they link back to the central Pillar (`/starting-business-bali-guide`) with anchor text diversity.
+- **Regional Targeting**: Continue the "Bali + Jakarta + National" focus in metadata for competitive SEO positioning.
+- **Adding New Charts**: When adding new visualizations, ensure they match the established minimalist tone (slate, primary blue/indigo, muted foregrounds) and support the `isPrint` prop for flattened PDF output.
+- **Writing New Reports**: Any new long-form reports should utilize the `<AdvisoryInsight>` and `<RiskNote>` components (`src/components/ui/`) to break up walls of text.
+- **Performance**: Always run `npm run build` locally after adding heavy graphical dependencies (like `recharts`) to ensure chunk bundles remain optimized and error-free.
 - **LCP Optimization**: The main logo (`Navigation.tsx`) and the G20 map (`page.tsx`) utilize Next.js `<Image>` tags with `priority`, `fetchPriority="high"`, and explicit `sizes` attributes (`sizes="(max-width: 768px) 100vw, 50vw"`) to eliminate layout shifts and speed up the Largest Contentful Paint.
 - **Accessibility**: Semantic `aria-label`s were injected into interactive components (like the custom Hero sliders) ensuring a 100/100 accessibility score.
 - **Metadata Configuration**: Fixed all Next.js `metadataBase` configuration warnings to ensure OpenGraph (Twitter/Facebook/LinkedIn) link previews function correctly.
@@ -65,10 +85,5 @@ The website natively supports creating a beautifully formatted A4 PDF Whitepaper
 - **UI & Path Sanity**: Hardened asset paths against case-sensitive Linux environments (Vercel) to ensure static assets, like the primary logo, render flawlessly in production.
 
 ---
-
-## 5. Maintenance & Future Development
-- **Adding New Charts**: When adding new visualizations, ensure they match the established minimalist tone (slate, primary blue/indigo, muted foregrounds). Rely heavily on Lucide icons and basic tailwind shapes.
-- **Writing New Reports**: Any new long-form reports should utilize the `<AdvisoryInsight>` and `<RiskNote>` components (`src/components/ui/`) to break up walls of text.
-- **Performance**: Always run `npm run build` locally after adding heavy graphical dependencies (like `recharts`) to ensure chunk bundles remain optimized and error-free. 
 
 **End of Document**

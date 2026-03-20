@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AdvisoryInsight } from "@/components/ui/advisory-insight";
+import { RiskNote } from "@/components/ui/risk-note";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
@@ -78,22 +79,9 @@ export default function BaliInvestmentGuidePage() {
                         </div>
                     </section>
 
-                    {/* Regulatory Sovereignty */}
-                    <section className="space-y-6">
-                        <h2 className="text-3xl font-serif">Ensuring Capital Sovereignty</h2>
-                        <p className="text-muted-foreground leading-relaxed">
-                            Foreign investors must prioritize legal protection. Attempting to invest through "Nominees" is the <Link href="/mistakes-foreign-entrepreneurs-make" className="text-primary hover:underline">most common mistake</Link>. A formal <Link href="/starting-business-bali-guide#pma-structure" className="text-primary hover:underline font-medium">PT PMA structure</Link> is the only way to ensure 100% legal control over your investment portfolio.
-                        </p>
-                        <div className="p-6 border rounded-xl flex items-center gap-6 bg-muted/20">
-                            <ShieldCheck className="h-10 w-10 text-primary shrink-0" />
-                            <div className="space-y-1">
-                                <h4 className="font-bold text-sm">Investor KITAS (E23/E28)</h4>
-                                <p className="text-xs text-muted-foreground leading-relaxed">
-                                    Secure your right to manage your assets on the ground. See our <Link href="/starting-business-bali-guide#visa-options" className="text-primary hover:underline">residency roadmap</Link> for details.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+                    <RiskNote title="Capital Sovereignty Warning" variant="destructive">
+                        Attempting to invest through "Nominees" (local individuals holding assets in their name) is the <Link href="/mistakes-foreign-entrepreneurs-make" className="text-primary hover:underline font-bold">most critical error</Link> foreign investors make in Indonesia. A formal <Link href="/starting-business-bali-guide#pma-structure" className="text-primary hover:underline font-bold">PT PMA structure</Link> is the only legally recognized method to ensure 100% control over your investment portfolio.
+                    </RiskNote>
 
                     {/* Strategic Analysis */}
                     <section className="space-y-6">

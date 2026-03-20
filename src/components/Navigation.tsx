@@ -31,6 +31,8 @@ const Navigation = () => {
               height={40}
               className="h-10 w-auto"
               priority
+              fetchPriority="high"
+              sizes="40px"
             />
             <span className="text-xl font-bold tracking-tight">
               BALI ENTERPRISES

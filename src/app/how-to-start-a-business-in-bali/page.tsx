@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AdvisoryInsight } from "@/components/ui/advisory-insight";
+import { RiskNote } from "@/components/ui/risk-note";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
@@ -85,31 +86,29 @@ export default function HowToStartABusinessInBaliPage() {
                         Success in Bali is often about "Community Integration." Before launching, we recommend spending time in hubs like Canggu or Ubud to understand the <Link href="/entrepreneurship-in-bali" className="text-primary hover:underline">entrepreneurial culture in Bali</Link>.
                     </AdvisoryInsight>
 
-                    {/* Digital Nomad Transition */}
-                    <section className="space-y-6">
-                        <h2 className="text-3xl font-serif">The Nomad-to-Founder Pivot</h2>
-                        <p className="text-muted-foreground leading-relaxed">
-                            Many companies start as <Link href="/digital-nomads-startups-bali" className="text-primary hover:underline">digital nomads starting projects in Bali</Link>. The transition to a formal PT PMA is a strategic move that unlocks large-scale <Link href="/business-opportunities-bali" className="text-primary hover:underline">business opportunities in Bali</Link> and legal protection.
+                    <RiskNote title="The Nomad-to-Founder Pivot" variant="warning">
+                        <p className="mb-4">
+                            Many companies start as <Link href="/digital-nomads-startups-bali" className="text-primary hover:underline">digital nomads starting projects in Bali</Link>. The transition to a formal PT PMA is a strategic move that unlocks large-scale <Link href="/business-opportunities-bali" className="text-primary hover:underline font-bold">business opportunities</Link> and essential legal protection.
                         </p>
-                        <div className="p-6 border rounded-xl bg-muted/30 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="space-y-2 text-sm">
-                                <h4 className="font-bold flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" /> Nomad Risks</h4>
-                                <ul className="space-y-1 text-muted-foreground">
-                                    <li>• Lack of local bank account</li>
-                                    <li>• Visa non-compliance risk</li>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                            <div className="space-y-2">
+                                <h5 className="font-bold text-amber-900/90 dark:text-amber-200">Regulatory Risks</h5>
+                                <ul className="space-y-1 text-sm opacity-80">
                                     <li>• No local hiring rights</li>
+                                    <li>• Visa non-compliance risk</li>
+                                    <li>• Restricted banking access</li>
                                 </ul>
                             </div>
-                            <div className="space-y-2 text-sm">
-                                <h4 className="font-bold flex items-center gap-2"><ClipboardCheck className="h-4 w-4 text-primary" /> Founder Advantage</h4>
-                                <ul className="space-y-1 text-muted-foreground">
-                                    <li>• Formal tax residency</li>
+                            <div className="space-y-2">
+                                <h5 className="font-bold text-amber-900/90 dark:text-amber-200">Founder Advantage</h5>
+                                <ul className="space-y-1 text-sm opacity-80">
                                     <li>• Multi-year residency (KITAS)</li>
-                                    <li>• Access to government tenders</li>
+                                    <li>• Formal tax residency</li>
+                                    <li>• Full asset protection</li>
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </RiskNote>
 
                     {/* Mistakes to Avoid */}
                     <section className="space-y-6">
