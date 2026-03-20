@@ -28,10 +28,6 @@ export const metadata: Metadata = {
     canonical: "https://bali.enterprises",
   },
   manifest: "/manifest.webmanifest",
-  icons: {
-    icon: "/image/Logobalienterprises.webp",
-    apple: "/image/Logobalienterprises.webp",
-  },
   openGraph: {
     title: "Bali Enterprises | Global Holding & Investment Gateway",
     description:

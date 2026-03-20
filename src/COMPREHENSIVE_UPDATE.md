@@ -55,7 +55,7 @@ The site features a massive SEO content engine comprising **60+ high-authority g
 ### C. Deployment Hardening & UX Safeguards [NEW]
 1.  **Security Headers**: Implemented a comprehensive **Content Security Policy (CSP)**, HSTS, and X-Frame-Options in `next.config.ts`.
 2.  **UX Resilience**: Created branded, high-fidelity `src/app/not-found.tsx` and `src/app/error.tsx` pages to ensure professional brand continuity during disruptions.
-3.  **Indexing Integrity**: Switched to a dynamic `src/app/robots.ts` and managed `sitemap.ts` that includes all 17 new growth routes with optimized crawl priorities.
+3.  **Indexing Integrity**: Switched to a dynamic `src/app/robots.ts` and managed `sitemap.ts` that includes all 17 new growth routes with optimized crawl priorities. Standardized `icon.png` and `apple-icon.png` assets were deployed for optimal Googlebot favicon rendering.
 4.  **Hero UI Refinement**: Removed interactive sliders in favor of an aesthetic, fixed "Opacity style" gradient and high-contrast accessible CTAs for better performance and usability.
 
 ---
