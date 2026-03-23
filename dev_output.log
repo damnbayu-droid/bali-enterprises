@@ -21,3 +21,36 @@
  GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 553ms
  ✓ Compiled in 8s (853 modules)
  GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 932ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 658ms (489 modules)
+ ⨯ [TypeError: Cannot read properties of undefined (reading 'clientModules')]
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 14.1s (1176 modules)
+ GET /insights 500 in 26596ms
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 7130ms
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 335ms
+ GET /_next/static/css/app/layout.css?v=1774269782898 404 in 559ms
+ GET /_next/static/css/app/layout.css?v=1774269782898 404 in 419ms
+ GET /insight 404 in 234ms
+ GET /_next/static/css/app/layout.css?v=1774269812414 404 in 339ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 556ms
+ GET /_next/static/chunks/main-app.js?v=1774269812414 404 in 568ms
+ GET /_next/static/chunks/app/error.js 404 in 563ms
+ GET /_next/static/chunks/app/layout.js 404 in 544ms
+ GET /_next/static/chunks/app/not-found.js 404 in 287ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 358ms
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 584ms
+ GET /_next/static/css/app/layout.css?v=1774269894220 404 in 151ms
+ GET /_next/static/chunks/app/error.js 404 in 950ms
+ GET /_next/static/chunks/app/not-found.js 404 in 949ms
+ GET /_next/static/chunks/app/layout.js 404 in 953ms
+ GET /_next/static/chunks/main-app.js?v=1774269894220 404 in 961ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 961ms
+ GET /_next/static/chunks/app/insights/company-registration-proposal-indonesia-it-services/print/page.js 404 in 974ms
+ ○ Compiling /icon.png ...
+ ✓ Compiled /icon.png in 1633ms (592 modules)
+ GET /icon.png?9a49095fa7dd38c5 200 in 1997ms
+ ✓ Compiled in 5.7s (1173 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 3295ms
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 96ms

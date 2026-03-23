@@ -1,0 +1,13 @@
+
+> nextjs_tailwind_shadcn_ts@0.1.0 dev
+> next dev -p 3000 2>&1 | tee dev.log
+
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.11:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling /insights/company-registration-proposal-indonesia-it-services ...
+ ✓ Compiled /insights/company-registration-proposal-indonesia-it-services in 7.5s (847 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 9263ms
