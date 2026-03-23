@@ -41,7 +41,7 @@ export default function Hero() {
             {/* Content Group - Structured for SEO and Accessibility */}
             <div className="relative z-40 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center text-white pt-24 md:pt-0">
                 <div className="space-y-2 mb-8 inline-block">
-                    <span className="text-xs font-black uppercase tracking-[0.4em] italic text-primary/90 animate-in fade-in slide-in-from-bottom-4 duration-1000">Global Holding Group</span>
+                    <span className="text-xs font-black uppercase tracking-[0.4em] italic text-white animate-in fade-in slide-in-from-bottom-4 duration-1000">Global Holding Group</span>
                 </div>
                 
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-black tracking-tighter mb-10 leading-[0.85] drop-shadow-2xl italic">
