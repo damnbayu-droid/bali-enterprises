@@ -122,6 +122,13 @@ export default function ProposalContent({ isPrint = false }: { isPrint?: boolean
                                     <li><strong className="text-slate-800">Director:</strong> Operational executive (can be identical to Sh.1)</li>
                                     <li><strong className="text-slate-800">Commissioner:</strong> Non-executive supervisor</li>
                                 </ul>
+                                <div className="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-600 space-y-1">
+                                    <p className="font-semibold text-slate-800 flex items-center gap-1">
+                                        <AlertCircle className="h-3.5 w-3.5 text-amber-600" />
+                                        Administrative Pre-requisite:
+                                    </p>
+                                    <p>Although 100% foreign ownership is legislated for IT services, Notaries require 1 local individual designated for reporting setup, tax triggers, and compliance workflows. <strong className="text-slate-800">Bali Enterprises facilitates compliant local subject placement directly as part of our integration assistance</strong>.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -310,16 +317,54 @@ export default function ProposalContent({ isPrint = false }: { isPrint?: boolean
                             </p>
                         </div>
                         <div>
-                            <h3 className="text-xs uppercase tracking-wider text-slate-400 mb-2">B: Practical Breakdown</h3>
-                            <table className="w-full text-sm border-collapse border border-slate-200">
-                                <thead className="bg-slate-50 text-slate-700">
-                                    <tr><th className="border border-slate-200 p-2 text-left">Vendor tier</th><th className="border border-slate-200 p-2 text-left">Fee Range (Estimate)</th></tr>
-                                </thead>
-                                <tbody className="text-slate-600">
-                                    <tr><td className="border border-slate-200 p-2">Local Agency</td><td className="border border-slate-200 p-2">$3,000 – $5,000</td></tr>
-                                    <tr><td className="border border-slate-200 p-2">Premium/Corporate Law</td><td className="border border-slate-200 p-2 font-semibold">$6,000 – $10,000</td></tr>
-                                </tbody>
-                            </table>
+                            <h3 className="text-xs uppercase tracking-wider text-slate-400 mb-2">B: Practical Breakdown (Bali Enterprises Packages)</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                <div className="border border-slate-200 rounded p-4 bg-slate-50 text-xs flex flex-col h-full shadow-sm">
+                                    <div className="font-bold text-slate-900 mb-0.5">Basic Planning</div>
+                                    <div className="text-slate-500 text-[10px] mb-2">Core selection & shareholding</div>
+                                    <div className="text-slate-900 font-mono font-bold text-sm mb-3 border-b border-slate-200 pb-2">Rp 25.000.000</div>
+                                    <ul className="space-y-1 text-slate-500 list-disc list-inside flex-grow">
+                                        <li>Deed of Establishment</li>
+                                        <li>Ministry Approval Letter</li>
+                                        <li>Business ID (NIB)</li>
+                                        <li>Risk-Based Business License</li>
+                                        <li>OSS & AHU Registration</li>
+                                        <li>NPWP (Corporate Tax Number)</li>
+                                        <li>Taxable Entrepreneur Certificate</li>
+                                        <li>Standard Articles of Association</li>
+                                    </ul>
+                                </div>
+
+                                <div className="border border-slate-300 rounded p-4 bg-white text-xs flex flex-col h-full shadow-sm relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 bg-emerald-600 text-white text-[9px] px-2 py-0.5 font-semibold">RECOMMENDED</div>
+                                    <div className="font-bold text-slate-900 mb-0.5">Strategic Planning</div>
+                                    <div className="text-slate-500 text-[10px] mb-2">In-depth structure audit</div>
+                                    <div className="text-emerald-700 font-mono font-bold text-sm mb-3 border-b border-slate-200 pb-2">Rp 45.000.000</div>
+                                    <ul className="space-y-1 text-slate-600 list-disc list-inside flex-grow">
+                                        <li><strong className="font-semibold">All Basic Planning inclusions</strong></li>
+                                        <li>Prime Virtual Office (6 Months)</li>
+                                        <li>Bank Account Opening setup</li>
+                                        <li>Legal Consultation (6 Months)</li>
+                                        <li>Tax Assistance (6 Months)</li>
+                                    </ul>
+                                </div>
+
+                                <div className="border border-slate-900 rounded p-4 bg-slate-900 text-white text-xs flex flex-col h-full shadow-md">
+                                    <div className="font-bold mb-0.5">End-to-End Complete</div>
+                                    <div className="text-slate-400 text-[10px] mb-2">Full framework management</div>
+                                    <div className="text-amber-400 font-mono font-bold text-sm mb-3 border-b border-slate-700 pb-2">Rp 84.800.000</div>
+                                    <ul className="space-y-1 text-slate-300 list-disc list-inside flex-grow">
+                                        <li><strong className="font-semibold text-white">All Strategic inclusions</strong></li>
+                                        <li>Full Setup: Email, Logo & Web</li>
+                                        <li>Prime Virtual Office (1 Year)</li>
+                                        <li>Legal Consultation (3 Years)</li>
+                                        <li>Tax Assistance (3 Years)</li>
+                                        <li>1x Investor KITAS setup</li>
+                                        <li>Foreign ID / KTP support</li>
+                                        <li>Local driving licence kit</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
