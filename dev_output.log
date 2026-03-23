@@ -1,0 +1,23 @@
+
+> nextjs_tailwind_shadcn_ts@0.1.0 dev
+> next dev -p 3000 2>&1 | tee dev.log
+
+   ▲ Next.js 15.3.5
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.11:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.4s
+ ○ Compiling /insights/company-registration-proposal-indonesia-it-services/print ...
+ ✓ Compiled /insights/company-registration-proposal-indonesia-it-services/print in 11.3s (860 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 11953ms
+ GET /_next/static/webpack/743aa260028d859d.webpack.hot-update.json 404 in 12908ms
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 856ms
+ ○ Compiling /insights/company-registration-proposal-indonesia-it-services ...
+ ✓ Compiled /insights/company-registration-proposal-indonesia-it-services in 3.4s (856 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 5308ms
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 1966ms
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 553ms
+ ✓ Compiled in 8s (853 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 932ms
