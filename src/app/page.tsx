@@ -83,20 +83,23 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -mr-48 -mt-48"></div>
             <div className="relative z-10 flex flex-col lg:flex-row gap-16 items-start">
               <div className="flex-1 space-y-8">
-                <div className="flex items-center gap-4 text-primary mb-2">
-                  <Map className="h-8 w-8" />
+                <div className="flex items-center gap-4 text-white/80 mb-2">
+                  <Map className="h-8 w-8 text-primary" />
                   <span className="text-sm font-black uppercase tracking-[0.3em]">The Archipelago Network</span>
                 </div>
                 <h2 className="text-4xl md:text-6xl font-serif font-black italic tracking-tighter uppercase leading-[0.9]">
-                  Strategic Entry <br /> Points Across <span className="text-primary">Indonesia</span>
+                  Strategic Entry <br /> Points Across <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">Indonesia</span>
                 </h2>
                 <p className="text-xl text-gray-300 leading-relaxed font-bold opacity-80">
                   Expand your vision beyond Bali. We provide end-to-end PT PMA setup and regional advisory in 17 major economic hubs, from the financial engine of Jakarta to the new Pacific gateway in Manado.
                 </p>
                 <div className="pt-6">
-                  <Button size="lg" className="rounded-full px-12 py-8 bg-primary text-black hover:bg-white transition-all text-xl font-bold font-serif italic shadow-xl" asChild>
-                    <Link href="/sitemap">Explore Regional Hubs</Link>
-                  </Button>
+                  <Link 
+                    href="/sitemap" 
+                    className="inline-flex items-center justify-center rounded-full px-12 py-8 bg-primary text-black hover:bg-white transition-all text-xl font-bold font-serif italic shadow-xl"
+                  >
+                    Explore Regional Hubs
+                  </Link>
                 </div>
               </div>
               <div className="flex-1 grid grid-cols-2 gap-4 w-full">
