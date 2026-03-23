@@ -96,7 +96,7 @@ export default function Home() {
                 <div className="pt-6">
                   <Link 
                     href="/sitemap" 
-                    className="inline-flex items-center justify-center rounded-full px-12 py-8 bg-primary text-black hover:bg-white transition-all text-xl font-bold font-serif italic shadow-xl"
+                    className="inline-flex items-center justify-center rounded-full px-12 py-8 bg-primary text-slate-200 hover:bg-white hover:text-black transition-all text-xl font-bold font-serif italic shadow-xl"
                   >
                     Explore Regional Hubs
                   </Link>
