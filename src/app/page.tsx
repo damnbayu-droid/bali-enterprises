@@ -24,9 +24,7 @@ export default function Home() {
     "@type": "Service",
     "serviceType": "PT PMA Setup & Investment Advisory",
     "provider": {
-      "@type": "Organization",
-      "name": "Bali Enterprises",
-      "url": "https://bali.enterprises"
+      "@id": "https://bali.enterprises/#organization"
     },
     "areaServed": "Indonesia",
     "description": "Professional guidance for foreign direct investment, company formation (PT PMA), and strategic business expansion in Bali, Jakarta, and across the Indonesian archipelago."

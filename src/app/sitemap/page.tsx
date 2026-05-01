@@ -28,6 +28,8 @@ const clusters = [
             { title: "Strategic Entry Blueprint", href: "/strategic-entry-blueprint-bali" },
             { title: "Why Invest in Bali", href: "/why-invest-in-bali" },
             { title: "Startup Ecosystem Bali", href: "/startup-ecosystem-bali" },
+            { title: "BPOM Certification Guide", href: "/bpom-certification-indonesia-pt-pma-guide" },
+            { title: "BPOM for PT PMA (Warehouse)", href: "/bpom-certification-indonesia-pt-pma-guide#warehouse" },
         ]
     },
     {

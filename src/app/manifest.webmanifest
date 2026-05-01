@@ -1,0 +1,16 @@
+{
+  "name": "Bali Enterprises",
+  "short_name": "Bali Ent",
+  "description": "Global Holding & Investment Gateway to Indonesia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

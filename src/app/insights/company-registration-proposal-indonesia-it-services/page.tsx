@@ -1,5 +1,6 @@
 import React from "react";
 import ProposalContent from "./ProposalContent";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata = {
     title: "Company Registration Proposal Indonesia (IT Services) | Bali Enterprises",
@@ -36,6 +37,14 @@ export default function ProposalPage() {
 
     return (
         <div className="pt-24 bg-slate-50 min-h-screen">
+            <div className="max-w-4xl mx-auto px-6 pt-8">
+                <Breadcrumbs 
+                    items={[
+                        { label: "Insights", href: "/insights" },
+                        { label: "Company Registration Proposal", href: "/insights/company-registration-proposal-indonesia-it-services" }
+                    ]} 
+                />
+            </div>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

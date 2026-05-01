@@ -62,6 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/pt-pma-setup-malang',
         '/pt-pma-setup-denpasar',
         '/pt-pma-setup-tangerang',
+        '/bpom-certification-indonesia-pt-pma-guide',
+        '/bpom-certification-indonesia-pt-pma-guide#warehouse',
         '/insights',
         '/insights/company-registration-proposal-indonesia-it-services',
     ].map(

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FileText, ArrowRight } from "lucide-react";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata = {
     title: "Strategic Insights & Proposals | Bali Enterprises",
@@ -20,6 +21,9 @@ export default function InsightsPage() {
     return (
         <div className="pt-32 pb-24 bg-slate-50 min-h-screen">
             <div className="max-w-4xl mx-auto px-6">
+                <Breadcrumbs 
+                    items={[{ label: "Insights", href: "/insights" }]} 
+                />
                 <header className="border-b border-slate-200 pb-6 mb-12">
                     <h1 className="text-3xl font-serif font-bold text-slate-900">Advisory Insights</h1>
                     <p className="text-sm text-slate-500 mt-2">Professional frameworks and structural data supporting investment execution.</p>

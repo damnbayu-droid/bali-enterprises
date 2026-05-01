@@ -14,3 +14,59 @@
  ○ Compiling /insights/company-registration-proposal-indonesia-it-services/print ...
  ✓ Compiled /insights/company-registration-proposal-indonesia-it-services/print in 1523ms (852 modules)
  GET /insights/company-registration-proposal-indonesia-it-services/print 200 in 1546ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2s (866 modules)
+ GET / 200 in 2755ms
+ GET / 200 in 648ms
+ ✓ Compiled /icon.png in 450ms (526 modules)
+ GET /icon.png?9a49095fa7dd38c5 200 in 693ms
+ ○ Compiling /sitemap ...
+ ✓ Compiled /sitemap in 856ms (910 modules)
+ GET /sitemap 200 in 1305ms
+ GET /icon.png?9a49095fa7dd38c5 200 in 261ms
+ ○ Compiling /boutique-investment-bali ...
+ ✓ Compiled /boutique-investment-bali in 898ms (925 modules)
+ GET /boutique-investment-bali 200 in 1258ms
+ ✓ Compiled /insights in 464ms (932 modules)
+ GET /insights 200 in 1126ms
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 48ms
+ ✓ Compiled in 3.3s (923 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 279ms
+ ✓ Compiled in 1126ms (923 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 550ms
+ ✓ Compiled in 873ms (923 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 540ms
+ GET / 200 in 492ms
+ ✓ Compiled in 6.2s (923 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 437ms
+ GET / 200 in 492ms
+ ✓ Compiled in 4.5s (923 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 573ms
+ GET / 200 in 701ms
+ ✓ Compiled in 2.1s (923 modules)
+ GET / 200 in 769ms
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 770ms
+ ✓ Compiled in 1659ms (923 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 871ms
+ GET / 200 in 973ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 3.4s (932 modules)
+ GET /contact 200 in 3828ms
+ ✓ Compiled /icon.png in 467ms (572 modules)
+ GET /icon.png?9a49095fa7dd38c5 200 in 671ms
+ ✓ Compiled in 4.1s (940 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 1755ms
+ GET / 200 in 1776ms
+ ✓ Compiled in 5.2s (940 modules)
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 686ms
+ GET / 200 in 731ms
+ ○ Compiling /sitemap ...
+ ✓ Compiled /sitemap in 2.2s (556 modules)
+ GET /sitemap 200 in 4072ms
+ ✓ Compiled in 3.3s (931 modules)
+ GET / 200 in 1424ms
+ GET /insights/company-registration-proposal-indonesia-it-services 200 in 1415ms
+ GET /sitemap 200 in 1429ms
+ ○ Compiling /sitemap.xml ...
+ ✓ Compiled /sitemap.xml in 3s (938 modules)
+ GET /sitemap.xml 200 in 4072ms
